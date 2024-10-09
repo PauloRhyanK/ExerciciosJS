@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercicio</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <header>
+        <h1>Detecção ode usuário</h1>
+    </header>
+    <section>
+        <div class="divbuild">
+            <span class="spanbuild">
+                <span class="column">
+                    <label for="txtname">Nome Completo</label>
+                    <input type="text" name="txtname" id="txtname" placeholder="Insira seu nome completo">
+                </span>
+                
+                <span class="column">
+                    <label for="uemail"> Email:</label>
+                    <input type="email" name="uemail" id="uemail" placeholder="example@gmail.com">
+                </span>
+            </span> 
+            <span class="spanbuild">
+                <span class="column">
+                    <label for="txtano">Data de Nascimento:</label>
+                    <input type="date" name="txtano" id="txtano" min="0" value="" >
+                    <p class="errotxt" id="enascimento"></p>
+                </span>
+                <span class="usex">
+                    Sexo:
+                    <p class="uradio">
+                        <input type="radio" name="radsex" id="masc" checked>
+                        <label for="masc">Masculino</label>
+                    
+                        <input type="radio" name="radsex" id="fem" checked>
+                        <label for="fem">Feminino</label>
+                    </p>
+                </span>
+            </span>
+            <span class="spanfinal">
+                
+                <input class="verificar" type="button" value="Verificar" onclick="verificar()">
+                
+            
+            </span>
+
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; PauloRhyanKuster</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

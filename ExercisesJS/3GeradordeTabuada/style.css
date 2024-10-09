@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(70, 142, 236);
+    font: normal 15pt Arial;
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: white ;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.342);
+
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+button{
+    background-color: rgb(70, 142, 236);;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.342);
+    padding: 10px;
+}
+
+button:active {
+    background-color: rgb(35, 65, 105);
+}
+
+input{
+    padding: auto;
+    border-radius: 4px;
+    padding: 4px;
+    border-color: rgba(0, 0, 0, 0.267);
+}
+
+textarea{
+    padding: auto;
+    background-color: rgb(225, 251, 255);
+    border-radius: 4px;
+    padding: 10px;
+    border-color: rgba(0, 0, 0, 0.267);
+}
+
+
+.fdivbuild{
+    margin: 10px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fcopiar{
+    display: flex;
+    justify-content: end;
+}
+
+.copiar{
+    margin: 10px;
+    margin-top: 15px;
+    max-width: 150px;
+    font-size: 13pt;
+}
+
+.concluded{
+    font-size: small;
+    color: rgb(72, 185, 72);
+    font-style: italic;
+}
