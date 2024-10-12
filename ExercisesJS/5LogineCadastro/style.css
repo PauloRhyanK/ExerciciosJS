@@ -18,11 +18,15 @@ footer {
 
 input{
     border-radius: 5px;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(240, 236, 236);
     border: none;
     padding: 10px;
     margin-top: 10px;
     width: 100%;
+}
+input[readonly]{
+    background-color: rgb(199, 199, 199); 
+
 }
 
 button{
@@ -43,6 +47,8 @@ button:active{
     background-color:rgb(17, 35, 58);
     transform: scale(0.95)
 }
+
+
 
 .userft {
     width: 150px; /* Defina a largura desejada */
@@ -67,14 +73,19 @@ button:active{
     margin: auto;
     padding: 30px;
 
-    width: 500px;
-    height: 500px;
-    
+    width: 850px;
+    height: 100%;
+}
+
+.login{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 3fr 2fr 2fr 1fr 1fr;
     grid-template-areas: ". ." ". foto" ".  form" ". form" ". final" ". .";
 }
+
+
+
     
 .foto {
     display: flex;
@@ -100,4 +111,125 @@ button:active{
     grid-area: final;
     justify-content: center;
 }
+
+.hidden{
+    display: none;
+}
+
+.cadastro {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr; /* 3 colunas */
+    grid-template-rows: auto auto 2fr; /* Linhas ajustadas para que a grid se adapte ao conteúdo */
+    grid-template-areas: 
+        "tcad tcad tcad" /* Primeira linha, área 'tcad' ocupando toda a largura */
+        ". step ." /* Segunda linha, 'step' na coluna do meio */
+        ". botoes ."; /* Terceira linha, 'botoes' ocupando toda a largura */
+}
+
+
+.tcad{
+    display: flex;
+    justify-content: center;
+    grid-area: tcad;
+}
+
+.step{
+    display: none;
+    grid-area: step; /* Define a área da grid para 'step' */
+}
+.step.active{
+    flex-direction: column; /* Organiza os campos em coluna */
+    justify-content: center; /* Centraliza os campos */
+    align-items: center;
+    display: flex;
+}
+
+.cadastro label{
+    font-size: medium;
+}
+
+.campocad{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.campocad div{
+    text-align: start;
+    width: 40%;
+    margin-top: 20px;
+}
+
+.campocad input{
+    width: 100%;
+    padding: 10px;
+}
+
+
+.campocad input[type="date"]{
+    width: 50%;
+}
+.campocad input[type="password"]{
+    width: 90%;
+}
+
+.campocad button{
+    width: 10%;
+    height: 35%;
+    margin: 15px;
+
+
+
+    background-color: rgb(109, 109, 109);
+}
+
+.campocad button:active{
+    background-color:rgb(17, 35, 58);
+    transform: scale(1)
+}
+
+.campocad p{
+    font-size: small;
+    margin: 1px;
+}
+
+
+
+.adress div{
+    width: 100%;
+    display: flex;
+}
+
+.adress div div{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.adress div input{
+    width: auto;
+}
+
+.botoes{
+    display: flex;
+    justify-content: flex-end;
+    grid-area: botoes;
+
+    margin-top: 20px;
+}
+
+.footer{
+    display: block;
+    width: 100%;
+}
+
+.footer input{
+    width: auto;
+    margin-top: 20px;
+}
+
+
+
 
