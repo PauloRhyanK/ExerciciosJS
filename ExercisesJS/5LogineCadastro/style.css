@@ -138,10 +138,10 @@ button:active{
     grid-area: step; /* Define a área da grid para 'step' */
 }
 .step.active{
+    display: flex;
     flex-direction: column; /* Organiza os campos em coluna */
     justify-content: center; /* Centraliza os campos */
     align-items: center;
-    display: flex;
 }
 
 .cadastro label{

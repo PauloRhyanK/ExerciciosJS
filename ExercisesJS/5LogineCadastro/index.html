@@ -41,7 +41,7 @@
     <form id="cadastro" class="content cadastro">
         <h1 class="tcad"> Insira seus dados</h1>
 
-        <div class="step ">
+        <div class="step active">
             <div class="campocad">
                 <div>
                     <label for="nome">Nome Completo</label>
@@ -59,7 +59,7 @@
                 <div class="CEP">
                     <div>
                         <label for="cep">CEP</label>
-                        <input type="number" name="cep" id="cep" placeholder="00000-00">
+                        <input type="number" name="cep" id="cep" placeholder="00000-00" onblur="buscarEndereco()" >
                     </div>
                     <div>
                         <label for="cidade">Cidade</label>
@@ -99,7 +99,7 @@
             </div>
         </div>
         
-        <div class="step active">
+        <div class="step ">
             <div class="campocad">
                 <div>
                     <label for="usuario">Nome de usuario</label>
@@ -145,7 +145,7 @@
 
         </div>
         <div class="botoes">
-            <button onclick="Login()">Login</button>
+            <button onclick="irLogin()">Login</button>
             <button class="hidden" onclick="voltar()">Voltar</button>
             <button onclick="proximo()">Proximo</button>
             <button class="hidden" onclick="cadastrar()">Cadastrar</button>
